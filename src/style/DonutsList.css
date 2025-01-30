@@ -1,0 +1,22 @@
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Algerien';
+    margin-bottom: 20px;
+    color: #85a7c3;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.donutList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
