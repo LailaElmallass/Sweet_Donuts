@@ -34,6 +34,7 @@ A simple e-commerce shopping cart for a donut shop built with **React** and **Re
 .
 ├── src
 │   ├── components
+|   |   ├── Layout.js
 │   │   ├── Navbar.js
 │   │   ├── DonutsList.js
 │   │   ├── DonutsCard.js
@@ -43,7 +44,9 @@ A simple e-commerce shopping cart for a donut shop built with **React** and **Re
 │   │   ├── DonutsSlice.js
 │   ├── style
 │   │   ├── Cart.css
+│   │   ├── DonutsCard.css
 │   │   ├── DonutsList.css
+│   │   ├── Layout.css
 │   ├── App.js
 │   ├── index.js
 ├── package.json
