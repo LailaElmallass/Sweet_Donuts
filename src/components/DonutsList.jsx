@@ -3,6 +3,7 @@ import{useSelector, useDispatch} from 'react-redux'
 import DonutsCard from './DonutsCard';
 import '../style/DonutsList.css';
 import { addToCart } from '../features/CartSlice';
+import Navbar from './Navbar';
 
 function DonutsList() {
     const donuts = useSelector( state => state.donuts.items);

@@ -24,7 +24,7 @@ function Navbar() {
                     <Link to="/contact" className='nav-link'><strong>Contact</strong></Link>
                 </li>
                 <li className='nav-item mx-2'>
-                    <Link to="/menu" className='nav-link'><strong>Menu</strong></Link>
+                    <Link to="/DonutsList" className='nav-link'><strong>Menu</strong></Link>
                 </li>
         </ul>
             

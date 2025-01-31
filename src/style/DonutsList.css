@@ -79,6 +79,7 @@ h1 {
 
     .CategoriesButton {
         flex-direction: column;  /* Stack the categories button on small screens */
+        margin: 10px;
     }
 
     .btn-Categorie {
@@ -101,7 +102,7 @@ h1 {
 
     .btn-Categorie {
         width: 100%;  /* Full-width buttons for mobile */
-        margin: 8px 0;
+        margin: 10px 0;
         font-size: 14px;  /* Smaller font size for buttons */
     }
 }

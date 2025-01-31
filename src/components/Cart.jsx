@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Navbar from './Navbar';
 import { Trash } from 'lucide-react';
 import { removeFromCart, increaseQuantity, decreaseQuantity } from '../features/CartSlice';
 import '../style/Cart.css';
@@ -13,7 +12,6 @@ function Cart() {
 
     return (
         <div className='container'>
-            <Navbar />
             <h1>My Cart</h1>
 
             {cartItems.length > 0 ? (

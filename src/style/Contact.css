@@ -1,0 +1,91 @@
+
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-family: 'Algerian', cursive;
+    font-size: 36px;
+    color: #85a7c3;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputs {
+    width: 400px;
+    padding: 12px;
+    border: 2px solid #85a7c3;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #214665;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #698299;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.SubmitBtn {
+    width: 200px;
+    background-color: #85a7c3;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.SubmitBtn:hover {
+    background-color: #698299;
+    transform: scale(1.05);
+}
+
+/* Input and Textarea Focused Style */
+.form-control:focus {
+    border-color: #698299;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .SubmitBtn {
+        padding: 12px 25px;
+    }
+}
