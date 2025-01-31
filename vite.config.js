@@ -13,9 +13,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Entry files (JS)
-        entryFileNames: 'assets/[name].[hash].js',  // Dynamically generate JS file names with hashes
+        entryFileNames: 'assets/index.CoRMjXpm.js',  // Dynamically generate JS file names with hashes
         // Chunk files (code-splitting)
-        chunkFileNames: 'assets/[name].[hash].js',  // Dynamically generate chunk JS file names with hashes
+        chunkFileNames: 'assets/index.CoRMjXpm.js',  // Dynamically generate chunk JS file names with hashes
         // Asset files (images, CSS, fonts, etc.)
         assetFileNames: 'assets/[name].[hash][extname]',  // Dynamically generate asset filenames with hashes
       },
