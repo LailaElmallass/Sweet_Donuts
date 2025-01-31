@@ -34,6 +34,11 @@ function Layout() {
     <div>
       <Contact />
     </div>
+    <div>
+      <div className='footer'>
+        <p> 2022 Donuts World. All rights reserved.</p>
+      </div>
+    </div>
     </div>
     
   );

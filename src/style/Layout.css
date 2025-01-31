@@ -147,3 +147,13 @@ h3 {
         justify-content: center;
     }
 }
+.footer{
+    background-color: #85a7c3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
