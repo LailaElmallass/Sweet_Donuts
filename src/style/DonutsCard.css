@@ -55,10 +55,10 @@
     bottom: 30px;
 }
 
-.badge {
+.badge-Cat {
     color: aliceblue;
     background-color: #214665;
-    width: 40%;
+    width: 50%;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;

@@ -20,3 +20,30 @@ h1{
     flex-wrap: wrap;
     margin: 20px;
 }
+
+.CategoriesButton{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-Categorie{
+    background-color: #85a7c3;
+    width: 200px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+}
+.btn-Categorie:hover{
+    background-color: #698299;
+    transition: background-color 0.3s ease-in-out;
+}
