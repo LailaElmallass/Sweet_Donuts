@@ -1,30 +1,60 @@
-.tableau{
+/* Table container */
+.tableau {
     background-color: #85a7c3;
     width: 100%;
     margin: 5px;
     padding: 20px;
-
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-thead{
+.tableau:hover {
+    transform: scale(1.02); /* Slight scale-up effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Table Header */
+thead {
     background-color: #77a3c6;
     text-align: center;
     padding: 20px;
+    transition: background-color 0.3s ease;
 }
 
-tbody{
+thead:hover {
+    background-color: #5c7b91; /* Darker shade on hover */
+}
+
+/* Table Body */
+tbody {
     text-align: center;
     padding: 20px;
 }
 
-tfoot{
+tbody tr:hover {
+    background-color: #e0f1f9; /* Light background color for row hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on row hover */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Table Footer */
+tfoot {
     background-color: #77a3c6;
     text-align: center;
     padding: 20px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.btnQuantity{
+tfoot:hover {
+    background-color: #5c7b91; /* Darker shade on hover */
+}
+
+/* Quantity Button */
+.btnQuantity {
     background-color: #77a3c6;
     width: 20px;
     color: white;
@@ -34,11 +64,86 @@ tfoot{
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-.empty-cart-message{
+.btnQuantity:hover {
+    background-color: #5c7b91; /* Darker button color on hover */
+    transform: scale(1.2); /* Slight scale-up effect */
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
     font-size: 20px;
     color: #194974;
     margin: 20px;
     text-align: center;
+    transition: color 0.3s ease;
+}
+
+.empty-cart-message:hover {
+    color: #77a3c6; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .tableau {
+        padding: 15px;
+    }
+
+    .btnQuantity {
+        width: 25px;
+        font-size: 14px;
+    }
+
+    .empty-cart-message {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tableau {
+        padding: 10px;
+    }
+
+    thead, tfoot {
+        font-size: 14px;
+    }
+
+    tbody {
+        font-size: 16px;
+    }
+
+    .btnQuantity {
+        width: 30px;
+        font-size: 16px;
+    }
+
+    .empty-cart-message {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tableau {
+        padding: 5px;
+        overflow-x: scroll;
+    }
+
+    thead, tfoot {
+        font-size: 12px;
+    }
+
+    tbody {
+        font-size: 14px;
+    }
+
+    .btnQuantity {
+        width: 35px;
+        font-size: 18px;
+    }
+
+    .empty-cart-message {
+        font-size: 14px;
+    }
 }

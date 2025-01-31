@@ -1,9 +1,10 @@
-.container{
+.container {
     margin: 20px;
     padding: 20px;
 }
 
-h1{
+/* Header */
+h1 {
     text-align: center;
     font-family: 'Algerien';
     margin-bottom: 20px;
@@ -15,13 +16,16 @@ h1{
     line-height: 1.2;
 }
 
-.donutList{
+/* Donut List */
+.donutList {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    justify-content: space-between; /* Added for better spacing on larger screens */
 }
 
-.CategoriesButton{
+/* Categories Button */
+.CategoriesButton {
     width: 100%;
     margin: 5px;
     padding: 5px;
@@ -29,7 +33,8 @@ h1{
     justify-content: space-around;
 }
 
-.btn-Categorie{
+/* Button Styling */
+.btn-Categorie {
     background-color: #85a7c3;
     width: 200px;
     margin: 5px;
@@ -41,9 +46,62 @@ h1{
     padding: 10px 10px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-
 }
-.btn-Categorie:hover{
+
+.btn-Categorie:hover {
     background-color: #698299;
     transition: background-color 0.3s ease-in-out;
+}
+
+/* Make the layout responsive */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .donutList {
+        justify-content: center;  /* Center content on medium screens */
+    }
+
+    .btn-Categorie {
+        width: 180px;  /* Adjust button width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;  /* Smaller font size for h1 */
+    }
+
+    .donutList {
+        justify-content: center;
+    }
+
+    .CategoriesButton {
+        flex-direction: column;  /* Stack the categories button on small screens */
+    }
+
+    .btn-Categorie {
+        width: 100%;  /* Make the category buttons full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 20px;  /* Further reduce font size for mobile */
+        margin-bottom: 10px;
+    }
+
+    .donutList {
+        flex-direction: column;  /* Stack donuts vertically on very small screens */
+        justify-content: center;
+        margin: 10px 0;  /* Reduce margin */
+    }
+
+    .btn-Categorie {
+        width: 100%;  /* Full-width buttons for mobile */
+        margin: 8px 0;
+        font-size: 14px;  /* Smaller font size for buttons */
+    }
 }
