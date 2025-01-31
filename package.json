@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://LailaElmallass.github.io/Sweet_Donuts"
+  "homepage": "https://LailaElmallass.github.io/Sweet_Donuts",
 
   "scripts": {
     "dev": "vite",
