@@ -7,7 +7,7 @@ import Cart from './components/Cart.jsx'
 import DonutsList from './components/DonutsList.jsx'
 import Contact from './components/Contact.jsx'
 import Navbar from './components/Navbar.jsx'
-
+import About from './components/About.jsx'
 function App() {
   return (
     <Provider store={store}>
@@ -18,6 +18,8 @@ function App() {
           <Route path="/DonutsList" element={<DonutsList />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+
         </Routes>
       </Router>
     </Provider>

@@ -18,7 +18,7 @@ A simple e-commerce shopping cart for a donut shop built with **React** and **Re
    ```
 2. Navigate to the project folder:
    ```sh
-   cd React-bakery-page
+   cd Sweet_Donuts
    ```
 3. Install dependencies:
    ```sh
